@@ -1,0 +1,6 @@
+#!/bin/bash
+rmmod dpi_conntrack
+cp dpi_conntrack.ko /lib/modules/$(uname -r)/kernel/net/netfilter/
+depmod -a
+sync
+modprobe dpi_conntrack

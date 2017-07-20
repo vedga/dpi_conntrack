@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Исходные файлы"
+                   projectFiles="true">
+      <itemPath>src/dpi_conntrack_file.c</itemPath>
+      <itemPath>src/module.c</itemPath>
+      <itemPath>src/netns.c</itemPath>
+      <itemPath>src/procfs.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Файлы заголовков"
+                   projectFiles="true">
+      <itemPath>include/dpi_conntrack.h</itemPath>
+      <itemPath>src/dpi_conntrack_ko.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Файлы ресурсов"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Файлы тестов"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="include/dpi_conntrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/dpi_conntrack_file.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dpi_conntrack_ko.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/module.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/netns.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/procfs.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="include/dpi_conntrack.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/dpi_conntrack_file.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/dpi_conntrack_ko.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/module.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/netns.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/procfs.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
